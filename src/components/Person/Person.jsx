@@ -1,8 +1,8 @@
 export const Person = ({ person }) => {
-  let partnerSex = 'wife';
+  let partnerS = 'wife';
 
   // eslint-disable-next-line
-  person.sex === 'f' ? (partnerSex = 'husband') : null;
+  person.sex === 'f' ? (partnerS = 'husband') : null;
 
   return (
     <section className="Person">
@@ -10,7 +10,7 @@ export const Person = ({ person }) => {
       {person.age && <p className="Person__age">I am {person.age}</p>}
       {person.isMarried ? (
         <p className="Person__partner">
-          {person.partnerName} is my {partnerSex}
+          {person.partnerName} is my {partnerS}
         </p>
       ) : (
         <p className="Person__partner">I am not married</p>
